@@ -1,0 +1,279 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    background: rgba(15, 23, 42, 0.9);
+    position: sticky;
+    top: 0;
+}
+
+.header h1 {
+    color: #38bdf8;
+}
+
+.header nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #cbd5f5;
+    transition: 0.3s;
+}
+
+.header nav a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero img {
+    width: 150px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    border: 3px solid #38bdf8;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+}
+
+/* BOTÓN */
+.btn {
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* SECCIONES */
+.section {
+    padding: 3rem 10%;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 1.5rem;
+    color: #38bdf8;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skills span {
+    background: #1e293b;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+/* PROYECTOS */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.card {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.card a {
+    text-decoration: none;
+    color: #38bdf8;
+}
+
+/* SOCIAL */
+.social a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #cbd5f5;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #38bdf8;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #020617;
+    font-size: 0.8rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* HERO SECTION */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: radial-gradient(circle at top, #1e293b, #0f172a);
+}
+
+/* CONTENEDOR */
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* IMAGEN */
+.hero-image img {
+    width: 220px;
+    border-radius: 20px;
+    border: 3px solid #38bdf8;
+    box-shadow: 0 10px 30px rgba(56,189,248,0.3);
+    transition: 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05) rotate(1deg);
+}
+
+/* TEXTO */
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text h1 span {
+    color: #38bdf8;
+}
+
+.hero-text h2 {
+    font-size: 1.5rem;
+    color: #94a3b8;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+    color: #cbd5f5;
+}
+
+/* BOTONES */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn.primary {
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    color: white;
+}
+
+.btn.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(56,189,248,0.4);
+}
+
+/* BOTÓN SECUNDARIO */
+.btn.secondary {
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.btn.secondary:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+}
