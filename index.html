@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Betuel | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
     <header class="header">
-        <h1>Betuel A.S</h1>
+        <h1>Betuel <span>A.S</span></h1>
         <nav>
             <a href="#about">Sobre mí</a>
             <a href="#skills">Skills</a>
@@ -20,101 +22,134 @@
         </nav>
     </header>
 
-    <!-- HERO -->
-   <section class="hero">
-    
-    <div class="hero-container">
-        
-        <div class="hero-image">
-            <img src="./imagenes/imagen.png" alt="Betuel">
-        </div>
-
-        <div class="hero-text">
-            <h1>Hola, soy <span>Betuel</span> 👋</h1>
-            <h2>Fullstack Developer 🚀</h2>
-
-            <p>
-                Construyo experiencias web modernas, rápidas y funcionales.
-                Especializado en frontend y backend con tecnologías actuales.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary">Ver proyectos</a>
-                <a href="#contact" class="btn secondary">Contáctame</a>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Hola, soy <span class="text-gradient">Betuel</span> </h1>
+                <h2>Fullstack Developer 🚀</h2>
+                <p>
+                    Construyo experiencias web modernas, rápidas y funcionales.
+                    Especializado en frontend y backend con tecnologías actuales.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">Ver proyectos</a>
+                    <a href="#contact" class="btn secondary">Contáctame</a>
+                </div>
             </div>
-
+            <div class="hero-image">
+                <img src="./imagenes/imagen.png" alt="Betuel">
+            </div>
         </div>
+    </section>
 
-    </div>
-
-</section>
-
-    <!-- ABOUT -->
     <section id="about" class="section">
-        <h2>Sobre mí</h2>
-        <p>
+        <h2>Sobre <span class="text-gradient">mí</span></h2>
+        <p class="about-text">
             Soy un desarrollador apasionado por el frontend y backend.
             Me encanta crear aplicaciones completas usando tecnologías modernas
-            como React, Node.js y diseño UI/UX.
+            como React, Node.js y diseño UI/UX. Siempre en constante aprendizaje.
         </p>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="section">
-        <h2>Skills</h2>
+        <h2>Mis <span class="text-gradient">Skills</span></h2>
         <div class="skills">
-            <span>React</span>
-            <span>JavaScript</span>
-            <span>Python</span>
-            <span>Java</span>
-            <span>UI/UX</span>
-            <span>Figma</span>
-            <span>AI</span>
+            <a href="https://react.dev/" target="_blank" class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React">
+                <span>React</span>
+            </a>
+
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <span>JavaScript</span>
+            </a>
+
+            <a href="https://docs.python.org/3/" target="_blank" class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python">
+                <span>Python</span>
+            </a>
+
+            <a href="https://docs.oracle.com/en/java/" target="_blank" class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java">
+                <span>Java</span>
+            </a>
+
+            <a href="https://help.figma.com/" target="_blank" class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma">
+                <span>Figma</span>
+            </a>
+            <a href="https://nodejs.org/es/docs/" target="_blank" class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                <span>Node.js</span>
+            </a>
+
+            <a href="https://docs.astro.build/es/getting-started/" target="_blank" class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg" alt="Astro">
+                <span>Astro</span>
+            </a>
+
+            <a href="https://tailwindcss.com/docs/installation" target="_blank" class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind">
+                <span>Tailwind</span>
+            </a>
+
+            <a href="https://spring.io/projects/spring-boot" target="_blank" class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Boot">
+                <span>Spring Boot</span>
+            </a>
+
+            <a href="https://docs.djangoproject.com/es/" target="_blank" class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django">
+                <span>Django</span>
+            </a>
         </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="section">
-        <h2>Proyectos</h2>
-
+        <h2>Proyectos <span class="text-gradient">Destacados</span></h2>
         <div class="projects">
-
             <div class="card">
+                <img src="https://placehold.co/600x400/1e293b/60a5fa?text=Proyecto+1" alt="App Web" class="project-img">
                 <h3>App Web</h3>
-                <p>Aplicación fullstack con autenticación y base de datos.</p>
-                <a href="#">Ver proyecto</a>
+                <p>Aplicación fullstack con autenticación y base de datos en tiempo real.</p>
+                <a href="URL_DE_TU_PROYECTO" target="_blank">Ver proyecto →</a>
             </div>
-
             <div class="card">
+                <img src="https://placehold.co/600x400/1e293b/60a5fa?text=Proyecto+2" alt="Landing Page" class="project-img">
                 <h3>Landing Page</h3>
-                <p>Diseño moderno optimizado para conversión.</p>
-                <a href="#">Ver proyecto</a>
+                <p>Diseño moderno y responsivo, altamente optimizado para conversión.</p>
+                <a href="URL_DE_TU_PROYECTO" target="_blank">Ver proyecto →</a>
             </div>
-
             <div class="card">
+                <img src="https://placehold.co/600x400/1e293b/60a5fa?text=Proyecto+3" alt="Dashboard" class="project-img">
                 <h3>Dashboard</h3>
-                <p>Panel interactivo con gráficos y métricas.</p>
-                <a href="#">Ver proyecto</a>
+                <p>Panel interactivo con gráficos, métricas y gestión de usuarios.</p>
+                <a href="URL_DE_TU_PROYECTO" target="_blank">Ver proyecto →</a>
             </div>
-
         </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section">
-        <h2>Contacto</h2>
-        <p>Puedes encontrarme en:</p>
-
+        <h2>Ponte en <span class="text-gradient">Contacto</span></h2>
+        <p>¿Tienes un proyecto en mente? Puedes encontrarme en:</p>
         <div class="social">
-            <a href="https://github.com/" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-            <a href="https://instagram.com/" target="_blank">Instagram</a>
+            <a href="https://github.com/betuelarones-arch" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="social-icon">
+                GitHub
+            </a>
+            <a href="https://linkedin.com/in/TU_USUARIO" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="social-icon">
+                LinkedIn
+            </a>
+            <a href="https://instagram.com/TU_USUARIO" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="social-icon">
+                Instagram
+            </a>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Betuel - Portfolio</p>
+        <p>© 2026 Betuel - Creado con ☕ y código</p>
     </footer>
 
 </body>
